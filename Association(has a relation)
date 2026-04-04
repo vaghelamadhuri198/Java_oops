@@ -1,0 +1,19 @@
+
+class Address {
+    String city = "Rajkot";
+}
+
+class Student {
+    Address addr = new Address();   // association
+
+    void display() {
+        System.out.println(addr.city);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.display();
+    }
+}
